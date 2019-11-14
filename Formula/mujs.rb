@@ -20,7 +20,7 @@ class Mujs < Formula
 
   def install
     system "make", "release"
-    system "make", "prefix=#{prefix}", "install"
+    system "make", "prefix=#{prefix}", "install-shared"
   end
 
   test do
